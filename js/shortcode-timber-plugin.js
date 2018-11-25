@@ -1,0 +1,1 @@
+console.log("Shortcode Timber plugin javascript loaded");
