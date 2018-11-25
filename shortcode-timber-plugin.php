@@ -79,7 +79,9 @@ function shortcode_timber_plugin($atts = [], $content = null, $tag = '') {
         
         // Output with timber
         
-        Timber::render( 'views/shortcode-timber.twig', $attributes );
+        $output =  Timber::compile( 'views/shortcode-timber.twig', $attributes );
+
+        return $output;
         
     } else {
 
